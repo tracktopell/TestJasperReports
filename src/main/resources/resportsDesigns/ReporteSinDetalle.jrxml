@@ -56,7 +56,7 @@
 				<textFieldExpression><![CDATA[$P{diasEnProyecto}]]></textFieldExpression>
 			</textField>
 			<textField pattern="yyyy/MM/dd HH:mm:ss">
-				<reportElement x="163" y="58" width="100" height="20" uuid="4a095965-8abf-44f8-8423-217090b42785"/>
+				<reportElement x="163" y="58" width="120" height="20" uuid="4a095965-8abf-44f8-8423-217090b42785"/>
 				<textElement verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
