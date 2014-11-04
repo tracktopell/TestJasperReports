@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteSinDetalle" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a6eaf2c3-afcc-422b-baf0-3e9a04ea2e40">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="nombre" class="java.lang.String"/>
+	<parameter name="diasEnProyecto" class="java.lang.Integer"/>
+	<parameter name="fechaDeInicio" class="java.util.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="162" splitType="Stretch">
+			<staticText>
+				<reportElement x="42" y="126" width="489" height="36" uuid="54c01de2-576d-4414-ab72-fb844a8cc6b4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[TITULO REPORTE SIN DETALLE áéíóú ÁÉÍÓÚ ñÑ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="154" y="0" width="265" height="113" uuid="a3e02780-43f6-400a-897c-3e2cfc097bb3"/>
+				<imageExpression><![CDATA["resportsDesigns/images/logo_shcp.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="116" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="18" width="152" height="20" uuid="de364eeb-26e0-468c-a6c2-1118de6d810b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[NOMBRE :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="38" width="152" height="20" uuid="c7183744-fd0e-44d5-b038-45c6cbd0ed03"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[DIAS DE PROYECTO :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="58" width="152" height="20" uuid="cb2dfaaf-548e-4e36-8539-f2b959a59c36"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[FECHA DE INICIO :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="163" y="18" width="233" height="20" uuid="ec8fd5af-677f-4353-9dc9-c513321dd374"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="38" width="100" height="20" uuid="f0120d12-5b77-4d1c-96af-27c587b1b562"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{diasEnProyecto}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd HH:mm:ss">
+				<reportElement x="163" y="58" width="100" height="20" uuid="4a095965-8abf-44f8-8423-217090b42785"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fechaDeInicio}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,4 +1,5 @@
-TestJasperReports
-=================
+BUILD AND RUN
+	mvn clean package exec:java "-Dexec.mainClass=xtaticzero.testjasperreports.App"
 
-JasperReports basic project
+	mvn clean package exec:java "-Dexec.mainClass=xtaticzero.testjasperreports.EjecucionReportePadre"
+
